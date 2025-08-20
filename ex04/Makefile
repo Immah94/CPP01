@@ -1,8 +1,8 @@
-NAME = zombie
+NAME = replace
 
 CFLAG = -Wall -Wextra -Werror -std=c++98
 
-SRC = Zombie.cpp zombieHorde.cpp main.cpp
+SRC = main.cpp 
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -22,4 +22,4 @@ fclean: clean
 
 re: fclean all
 
-
+.PHONY: all clean fclean re
